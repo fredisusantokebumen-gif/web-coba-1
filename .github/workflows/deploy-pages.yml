@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Enable and Publish GitHub Pages
 
 on:
   push:
@@ -7,16 +7,32 @@ on:
 permissions:
   contents: read
   pages: write
-  id-token: write
 
 jobs:
-  deploy:
+  enable-pages:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: '.'
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+      - name: Enable Pages via REST API
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          OWNER=${REPO%%/*}
+          REPO_NAME=${REPO#*/}
+          echo "Enabling Pages for $REPO"
+          curl -s -X PUT \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $GITHUB_TOKEN" \
+            https://api.github.com/repos/$OWNER/$REPO_NAME/pages \
+            -d '{"source":{"branch":"gh-pages","path":"/"}}' | jq || true
+
+      - name: Show Pages URL
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          OWNER=${REPO%%/*}
+          REPO_NAME=${REPO#*/}
+          sleep 5
+          curl -s -H "Authorization: Bearer $GITHUB_TOKEN" \
+            https://api.github.com/repos/$OWNER/$REPO_NAME/pages | jq '.html_url'
