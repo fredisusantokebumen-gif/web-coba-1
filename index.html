@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV. Sekar Arum - Spesialis Joglo Kalimantan Timur</title>
+    
+    <!-- Tailwind CSS (Untuk Desain) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons (Untuk Ikon) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Font Style -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
+        .hero-overlay { background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.5), rgba(69, 26, 3, 0.9)); }
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased selection:bg-amber-200">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 bg-transparent">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center gap-2">
+                <i data-lucide="home" class="text-amber-400 w-7 h-7"></i>
+                <div class="flex flex-col">
+                    <span class="text-white font-bold text-xl tracking-wider font-serif">CV. SEKAR ARUM</span>
+                    <span class="text-amber-400 text-xs tracking-widest uppercase">Spesialis Joglo Kaltim</span>
+                </div>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8 text-white font-medium">
+                <a href="#home" class="hover:text-amber-400 transition">Beranda</a>
+                <a href="#spesifikasi" class="hover:text-amber-400 transition">Spesifikasi</a>
+                <a href="#harga" class="hover:text-amber-400 transition">Harga</a>
+                <a href="#galeri" class="hover:text-amber-400 transition">Galeri</a>
+                <a href="https://wa.me/6285227600408?text=Halo%20CV.%20Sekar%20Arum,%20saya%20tertarik%20dengan%20Rumah%20Joglo%20Jati%20untuk%20area%20Kalimantan%20Timur." target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full flex items-center gap-2 transition transform hover:scale-105">
+                    <i data-lucide="phone" class="w-4 h-4"></i>
+                    Hubungi Kami
+                </a>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button id="mobile-menu-btn" class="md:hidden text-white">
+                <i data-lucide="menu" class="w-7 h-7"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden bg-amber-950 absolute w-full p-4 flex-col gap-4 text-white shadow-xl border-t border-amber-800 mt-4">
+            <a href="#home" class="mobile-link">Beranda</a>
+            <a href="#spesifikasi" class="mobile-link">Spesifikasi</a>
+            <a href="#harga" class="mobile-link">Harga</a>
+            <a href="https://wa.me/6285227600408?text=Halo%20CV.%20Sekar%20Arum,%20saya%20tertarik%20dengan%20Rumah%20Joglo%20Jati%20untuk%20area%20Kalimantan%20Timur." class="bg-green-600 p-3 rounded text-center font-bold">WhatsApp Sekarang</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1628624747186-a941c476b7ef?q=80&w=2070&auto=format&fit=crop" alt="Rumah Joglo Pendopo Kayu Jati" class="w-full h-full object-cover">
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+
+        <div class="container mx-auto px-4 z-10 text-center text-white mt-16">
+            <div class="inline-block border border-amber-400 px-4 py-1 rounded-full text-amber-300 text-sm mb-4 bg-black/30 backdrop-blur-sm">
+                KHUSUS WILAYAH KALIMANTAN TIMUR
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold font-serif mb-6 leading-tight">
+                Hadirkan Kemewahan<br/>
+                <span class="text-amber-400">Joglo Kayu Jati Asli</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+                Spesialis pembuatan Rumah Joglo dan Pendopo tanpa dinding dengan kualitas kayu jati terbaik. 
+                Gratis ongkos kirim dan pemasangan.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="https://wa.me/6285227600408?text=Halo%20CV.%20Sekar%20Arum,%20saya%20tertarik%20dengan%20Rumah%20Joglo%20Jati%20untuk%20area%20Kalimantan%20Timur." target="_blank" class="bg-amber-600 hover:bg-amber-700 text-white text-lg font-bold px-8 py-4 rounded-lg flex items-center justify-center gap-2 transition shadow-lg shadow-amber-900/50">
+                    <i data-lucide="phone" class="w-6 h-6"></i>
+                    Pesan Via WhatsApp
+                </a>
+                <a href="#spesifikasi" class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white text-lg font-bold px-8 py-4 rounded-lg transition">
+                    Lihat Spesifikasi
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-16 bg-amber-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-md border-b-4 border-amber-600 hover:-translate-y-1 transition duration-300 text-center">
+                    <div class="text-amber-600 mb-4 flex justify-center"><i data-lucide="hammer" class="w-10 h-10"></i></div>
+                    <h3 class="text-xl font-bold text-amber-950 mb-2">Full Kayu Jati</h3>
+                    <p class="text-gray-600">Menggunakan bahan kayu jati asli berkualitas tinggi, awet dan mewah.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-md border-b-4 border-amber-600 hover:-translate-y-1 transition duration-300 text-center">
+                    <div class="text-amber-600 mb-4 flex justify-center"><i data-lucide="map-pin" class="w-10 h-10"></i></div>
+                    <h3 class="text-xl font-bold text-amber-950 mb-2">Khusus Kaltim</h3>
+                    <p class="text-gray-600">Layanan prioritas untuk wilayah Kalimantan Timur dan sekitarnya.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-md border-b-4 border-amber-600 hover:-translate-y-1 transition duration-300 text-center">
+                    <div class="text-amber-600 mb-4 flex justify-center"><i data-lucide="truck" class="w-10 h-10"></i></div>
+                    <h3 class="text-xl font-bold text-amber-950 mb-2">Terima Beres</h3>
+                    <p class="text-gray-600">Harga sudah termasuk pengiriman dan pemasangan oleh tim ahli kami.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications -->
+    <section id="spesifikasi" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-amber-950 mb-6">
+                        Spesifikasi Konstruksi <br/><span class="text-amber-600">Premium & Kokoh</span>
+                    </h2>
+                    <p class="text-gray-600 mb-8">
+                        Joglo kami dibangun dengan perhitungan struktur Jawa kuno yang presisi, menghasilkan bangunan yang gagah dan elegan. Berikut detail spesifikasi tipe standar kami:
+                    </p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-2"><i data-lucide="check" class="text-amber-600 mt-1 w-5 h-5 shrink-0"></i><span class="text-gray-700"><strong>Soko Tengah (Guru):</strong> 20 x 20 cm (Tinggi 4m)</span></li>
+                            <li class="flex items-start gap-2"><i data-lucide="check" class="text-amber-600 mt-1 w-5 h-5 shrink-0"></i><span class="text-gray-700"><strong>Soko Peracik:</strong> 16 x 16 cm (Tinggi 3m)</span></li>
+                            <li class="flex items-start gap-2"><i data-lucide="check" class="text-amber-600 mt-1 w-5 h-5 shrink-0"></i><span class="text-gray-700"><strong>Luas Dalam:</strong> 8 x 9 Meter</span></li>
+                            <li class="flex items-start gap-2"><i data-lucide="check" class="text-amber-600 mt-1 w-5 h-5 shrink-0"></i><span class="text-gray-700"><strong>Luas Luar (Jatuh Air):</strong> 11 x 10 Meter</span></li>
+                            <li class="flex items-start gap-2"><i data-lucide="check" class="text-amber-600 mt-1 w-5 h-5 shrink-0"></i><span class="text-gray-700"><strong>Tumpangsari:</strong> Dalam 7, Luar 3</span></li>
+                        </ul>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-2"><i data-lucide="check" class="text-amber-600 mt-1 w-5 h-5 shrink-0"></i><span class="text-gray-700"><strong>Plafon:</strong> Full Papan Jati</span></li>
+                            <li class="flex items-start gap-2"><i data-lucide="check" class="text-amber-600 mt-1 w-5 h-5 shrink-0"></i><span class="text-gray-700"><strong>Atap:</strong> Genteng Kodok</span></li>
+                            <li class="flex items-start gap-2"><i data-lucide="check" class="text-amber-600 mt-1 w-5 h-5 shrink-0"></i><span class="text-gray-700"><strong>Umpak:</strong> 16 Buah Batu Candi</span></li>
+                            <li class="flex items-start gap-2"><i data-lucide="check" class="text-amber-600 mt-1 w-5 h-5 shrink-0"></i><span class="text-gray-700"><strong>Finishing:</strong> Mowilex & Clear Sanding</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mt-8 p-4 bg-amber-50 rounded-lg border border-amber-200">
+                        <p class="text-sm text-amber-800 italic">
+                            *Tersedia juga ukuran Soko Tengah 18cm dengan harga lebih ekonomis. Bisa custom dinding full kayu atau tembok (Terima Kunci).
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 relative group">
+                    <div class="absolute -inset-2 bg-amber-600 rounded-lg rotate-2 opacity-50 group-hover:rotate-0 transition duration-300"></div>
+                    <img src="https://images.unsplash.com/photo-1628624747306-1dd38f322791?q=80&w=2070&auto=format&fit=crop" alt="Detail Struktur Joglo" class="relative rounded-lg shadow-xl w-full object-cover h-[400px]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="harga" class="py-20 bg-amber-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#fbbf24 1px, transparent 1px); background-size: 20px 20px;"></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-serif font-bold mb-4">Daftar Harga Terbaik</h2>
+                <p class="text-amber-200 text-lg">Harga khusus area Kalimantan Timur (Sudah Termasuk Pengiriman & Pasang)</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Paket 1 -->
+                <div class="bg-white text-gray-800 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300">
+                    <div class="bg-gray-100 p-6 border-b border-gray-200 text-center">
+                        <h3 class="text-2xl font-bold text-gray-800">Joglo Polos</h3>
+                        <p class="text-gray-500">Elegan & Minimalis</p>
+                    </div>
+                    <div class="p-8 text-center">
+                        <span class="text-sm text-gray-500">Mulai Dari</span>
+                        <div class="text-4xl font-bold text-amber-600 mb-6">Rp 310 Juta</div>
+                        <ul class="text-left space-y-4 mb-8">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-green-500 w-5 h-5"></i> Soko Tengah 20cm</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-green-500 w-5 h-5"></i> Full Kayu Jati</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-green-500 w-5 h-5"></i> Tanpa Dinding (Pendopo)</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-green-500 w-5 h-5"></i> Free Pasang di Kaltim</li>
+                        </ul>
+                        <a href="https://wa.me/6285227600408?text=Halo%20CV.%20Sekar%20Arum,%20saya%20tertarik%20dengan%20Joglo%20Polos." target="_blank" class="block w-full bg-gray-800 text-white py-3 rounded-lg font-bold hover:bg-gray-900 transition text-center">Pesan Sekarang</a>
+                    </div>
+                </div>
+
+                <!-- Paket 2 -->
+                <div class="bg-amber-100 text-gray-800 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300 border-2 border-amber-500 relative">
+                    <div class="absolute top-0 right-0 bg-amber-500 text-white text-xs px-3 py-1 font-bold rounded-bl-lg">TERLARIS</div>
+                    <div class="bg-amber-200 p-6 border-b border-amber-300 text-center">
+                        <h3 class="text-2xl font-bold text-amber-900">Joglo Ukir</h3>
+                        <p class="text-amber-800">Mewah & Bernilai Seni</p>
+                    </div>
+                    <div class="p-8 text-center">
+                        <span class="text-sm text-gray-500">Mulai Dari</span>
+                        <div class="text-4xl font-bold text-amber-700 mb-6">Rp 360 Juta</div>
+                        <ul class="text-left space-y-4 mb-8">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-amber-600 w-5 h-5"></i> Soko Tengah 20cm</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-amber-600 w-5 h-5"></i> Full Ukiran Khas Jawa</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-amber-600 w-5 h-5"></i> Tumpangsari 7 Tingkat</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="text-amber-600 w-5 h-5"></i> Finishing Mowilex Premium</li>
+                        </ul>
+                        <a href="https://wa.me/6285227600408?text=Halo%20CV.%20Sekar%20Arum,%20saya%20tertarik%20dengan%20Joglo%20Ukir." target="_blank" class="block w-full bg-amber-600 text-white py-3 rounded-lg font-bold hover:bg-amber-700 transition text-center">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="text-amber-200">
+                    *Harga dapat berubah menyesuaikan ukuran lahan dan permintaan custom (dinding, kunci, dll).
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="galeri" class="py-20 bg-amber-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-amber-950 text-center mb-12">Galeri Pengerjaan</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Image 1 -->
+                <div class="group relative overflow-hidden rounded-lg h-64">
+                    <img src="https://images.unsplash.com/photo-1605218427368-35b820a45e23?q=80&w=2000&auto=format&fit=crop" alt="Joglo 1" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <span class="text-white font-bold border border-white px-4 py-2">Tampak Depan</span>
+                    </div>
+                </div>
+                <!-- Image 2 -->
+                <div class="group relative overflow-hidden rounded-lg h-64">
+                    <img src="https://images.unsplash.com/photo-1599629938782-b1031c360879?q=80&w=2000&auto=format&fit=crop" alt="Tumpangsari" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <span class="text-white font-bold border border-white px-4 py-2">Detail Tumpangsari</span>
+                    </div>
+                </div>
+                <!-- Image 3 -->
+                <div class="group relative overflow-hidden rounded-lg h-64">
+                    <img src="https://images.unsplash.com/photo-1510521976075-80252115cc78?q=80&w=2000&auto=format&fit=crop" alt="Joglo Side" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <span class="text-white font-bold border border-white px-4 py-2">Tampak Samping</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-amber-950 text-amber-100 py-12 border-t border-amber-900">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-serif font-bold text-white mb-4">CV. SEKAR ARUM</h3>
+                    <p class="mb-4">
+                        Jasa Sekar Arum Gase. Ahlinya Rumah Joglo Jati. Melayani pembuatan Villa, Pendopo, dan Rumah Hunian klasik di Kalimantan Timur.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-4">Kontak Kami</h4>
+                    <div class="flex items-center gap-2 mb-2">
+                        <i data-lucide="phone" class="text-amber-500 w-5 h-5"></i>
+                        <span>085227600408</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <i data-lucide="map-pin" class="text-amber-500 w-5 h-5"></i>
+                        <span>Kalimantan Timur & Sekitarnya</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-4">Layanan</h4>
+                    <ul class="space-y-2">
+                        <li>Rumah Joglo Polos</li>
+                        <li>Rumah Joglo Ukir</li>
+                        <li>Renovasi Pendopo</li>
+                        <li>Terima Kunci (Custom)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-amber-900 pt-8 text-center text-sm">
+                <p>&copy; 2024 CV. Sekar Arum (Gase). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WA -->
+    <a href="https://wa.me/6285227600408?text=Halo%20CV.%20Sekar%20Arum,%20saya%20tertarik%20dengan%20Rumah%20Joglo%20Jati%20untuk%20area%20Kalimantan%20Timur." target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl z-50 transition transform hover:scale-110 flex items-center justify-center animate-bounce">
+        <i data-lucide="phone" class="w-8 h-8 fill-current"></i>
+    </a>
+
+    <!-- Logic Script -->
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-amber-950/95', 'shadow-lg', 'py-2');
+                navbar.classList.remove('bg-transparent', 'py-4');
+            } else {
+                navbar.classList.add('bg-transparent', 'py-4');
+                navbar.classList.remove('bg-amber-950/95', 'shadow-lg', 'py-2');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+        });
+
+        // Close menu when clicking a link
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+            });
+        });
+    </script>
+</body>
+</html>
